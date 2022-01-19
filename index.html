@@ -20,22 +20,22 @@
             </a>
             <ul class="header__menu list">
                 <li class="header__item">
-                    <a href="#" class="header__link link">О компании</a>
+                    <a href="#about" class="header__link link">О компании</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link link">Портфолио</a>
+                    <a href="#works" class="header__link link">Портфолио</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link link">Команда</a>
+                    <a href="#team" class="header__link link">Команда</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link link">Как мы работаем</a>
+                    <a href="#scheme" class="header__link link">Как мы работаем</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link link">Отзывы клиентов</a>
+                    <a href="#feedback" class="header__link link">Отзывы клиентов</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link link">Оставить заявку</a>
+                    <a href="#order" class="header__link link">Оставить заявку</a>
                 </li>
             </ul>
             <a class="header__link link" href="tel:+79818574624">+7 (981) 857-46-24</a>
@@ -51,7 +51,7 @@
     </header>
     <main>
         <h1 class="visually-hidden">Scandi - дизайн интерьера</h1>
-        <section class="about container">
+        <section class="about container" id="about">
             <h2 class="title">О нас</h2>
             <div class="flex">
                 <div class="about__img">
@@ -86,7 +86,7 @@
                 </dl>
             </div>
         </section>
-        <section class="works container-big">
+        <section class="works container-big" id="works">
             <h2 class="title works__title">Наши работы</h2>
             <div class="grid works__grid">
                 <article class="works__item">
@@ -148,7 +148,7 @@
             </div>
         </section>
         <div class="team-scheme">
-            <section class="team container">
+            <section class="team container" id="team">
                 <h2 class="title">Команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
@@ -174,7 +174,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="scheme container-big">
+            <section class="scheme container-big" id="scheme">
                 <h2 class="title">Как мы работаем</h2>
                 <ol class="scheme__list list">
                     <li class="scheme__item">
@@ -201,16 +201,16 @@
                 </ol>
             </section>
         </div>
-        <section class="feedback container">
+        <section class="feedback container" id="feedback">
             <h2 class="title">Отзывы</h2>
-            <div class="grid">
-                <div class="feedback__arrow">
+            <div class="feedback__grid">
+                <button class="arrow" type="button">
                     <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z"
                             fill="#F5F2ED" />
                     </svg>
-                </div>
+                </button>
                 <blockquote class="feedback__text-block">
                     <p class="feedback__text">
                         «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
@@ -226,48 +226,56 @@
                     </p>
                     <cite>АННА БЕЛОВСКАЯ</cite>
                 </blockquote>
-                <div class="feedback__image">
+                <div class="feedback__img">
                     <img src="img/feedback.jpg" width="407" height="272" alt="living-room">
                     <img src="img/feedback2.jpg" width="407" height="272" alt="kitchen">
                 </div>
-                <div class="feedback__arrow">
+                <button class="arrow" type="button">
                     <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z"
                             fill="#F5F2ED" />
                     </svg>
-                </div>
+                </button>
             </div>
         </section>
-        <section class="order container-big">
-            <div class="order__text">
-                <h2 class="title order__title">Оставить заявку</h2>
-                <p class="order__subtitle">
-                    Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
-                </p>
-                <form class="order__form form" action="#" method="post">
-                    <label>
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="tel" placeholder="Введите телефон">
-                    </label>
-                    <button class="btn" type="submit">Оставить заявку</a>
-                </form>
-            </div>
-            <div class="order__map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1615927970786!5m2!1sru!2sua"
-                    width="590" height="624" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section class="order" id="order">
+            <div class="order__container container-big">
+                <div class="order__text">
+                    <h2 class="title order__title">Оставить заявку</h2>
+                    <p class="order__subtitle">
+                        Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
+                    </p>
+                    <form class="order__form form" action="#" method="post">
+                        <p>
+                            <label><input type="text" placeholder="Ваше имя"></label>
+                        </p>
+                        <p>
+                            <label><input type="tel" placeholder="Введите телефон"></label>
+                        </p>
+                        <button class="btn order__btn" type="submit">Оставить заявку</a>
+                    </form>
+                </div>
+                <div class="order__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1615927970786!5m2!1sru!2sua"
+                        width="590" height="624" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer container">
-        <a class="footer__link" href="tel:+79818574624">+7 (981) 857-46-24</a>
         <address>
+            <a class="footer__link link" href="tel:+79818574624">+7 (981) 857-46-24</a>
             <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
         </address>
         <p>ИП Королёва А.А.</p>
     </footer>
-
+    <a class="arrow btn-up" href="#" title="Наверх">
+        <svg width="16" height="33" viewBox="0 0 16 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 33L9 1H7L7 33H9Z" fill="#F5F2ED"/>
+            </svg>
+        </a>
 </body>
 
 </html>
